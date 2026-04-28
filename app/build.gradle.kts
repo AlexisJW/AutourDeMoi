@@ -39,8 +39,8 @@ android {
     }
 }
 
-val mapsApiKey: String = project.findProperty("MAPS_API_KEY") as String? ?: ""
-android.defaultConfig.buildConfigField("String", "MAPS_API_KEY", "\"$mapsApiKey\"")
+val openTripMapApiKey: String = project.findProperty("OPENTRIPMAP_API_KEY") as String? ?: ""
+android.defaultConfig.buildConfigField("String", "OPENTRIPMAP_API_KEY", "\"$openTripMapApiKey\"")
 
 dependencies {
     implementation(libs.appcompat)
